@@ -27,7 +27,7 @@ def main():
         k = int(input("Enter value of k: "))
     except TypeError as ex:
         print("You have entered an incorrect value of k!")
-    print(get_kth_row_of_pascal_triangle(k))
+    print(get_kth_row_of_pascal_triangle(k) if k > 0 else "Enter a positive integer!")
 
 
 main()
